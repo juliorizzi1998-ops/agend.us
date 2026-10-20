@@ -20,7 +20,7 @@ const app = express()
 
 const db = new Database(process.env.DB_PATH || "fusion-calendarios.db")
 
-const puerto = 3000
+const puerto = process.env.PORT || 3000
 
 // =====================================================
 // URL PÚBLICA / LOCAL
