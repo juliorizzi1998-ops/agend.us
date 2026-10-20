@@ -18,7 +18,7 @@ const crypto = require("crypto")
 
 const app = express()
 
-const db = new Database("fusion-calendarios.db")
+const db = new Database(process.env.DB_PATH || "fusion-calendarios.db")
 
 const puerto = 3000
 
